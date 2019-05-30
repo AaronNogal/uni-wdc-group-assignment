@@ -1,0 +1,262 @@
+#loginBody
+{
+    background-image: url("../images/Background.jpg");
+	background-size: cover;
+}
+
+.loginbox
+{
+    position: relative;
+    top: 255px;
+    margin: auto;
+    padding: 10px;
+    width: 600px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: rgba(192,192,192,0.8);
+}
+
+.accountlogin
+{
+    width: 49%;
+    height: 100%;
+    float: left;
+    border-right-style: solid;
+}
+
+.socialLogin
+{
+    width: 49%;
+    height: 100%;
+    float: right;
+    text-align: center;
+}
+
+.socialButton
+{
+    width: 250px;
+    height: 35px;
+}
+
+#FacebookSignIn
+{
+    position: relative;
+    top: 40px;
+}
+
+#GoogleSignIn
+{
+    position: relative;
+    top: 60px;
+    left: 20px;
+}
+
+#RegisterText
+{
+    position: relative;
+    top: 130px;
+}
+
+#registerRedirectButton
+{
+    width: 250px;
+    height: 35px;
+    bottom: 20px;
+    position: relative;
+    top: 140px;
+}
+
+.loginTextArea
+{
+    width: 90%;
+    height: 18px;
+    resize: none;
+}
+
+#LoginButton
+{
+    margin: 5px 25px;
+    height: 30px;
+    width: 70px;
+    position: relative;
+    left: 57px;
+}
+
+#forgotPasswordBackground
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+@keyframes slideOutDown
+{
+    from {
+        transform: translate3d(0, -25%, 0);
+    }
+
+    to {
+        visibility: hidden;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#fogotPasswordBox
+{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    height: 175px;
+    top: 300px;
+    background-color: white;
+    border-style: solid;
+    animation-name: slideOutDown;
+    animation-duration: 0.25s;
+    animation-play-state: paused;
+}
+
+#loginErrorMessage
+{
+    display: none;
+    text-align: center;
+    height: 50px;
+    width: 90%;
+    background-color: rgba(255,0,0,0.5);
+}
+
+#loginErrorMessageText
+{
+    position: relative;
+    top: 5px;
+}
+
+#CloseButton
+{
+    position: absolute;
+    right: 15px;
+    top: 1px;
+}
+
+.nameInputBox
+{
+    position: absolute;
+    top: 120px;
+    width: 200px;
+    height: 18px;
+    resize: none;
+}
+
+#lastNameInput
+{
+    left: 250px;
+}
+
+#lastNameText
+{
+    position: absolute;
+    top: 60px;
+    left: 250px;
+}
+
+.EPInputBox
+{
+    width: 440px;
+    height: 18px;
+    resize: none;
+}
+
+.showBox
+{
+    resize: none;
+    height: 18px;
+    width: 98%;
+}
+
+#changePasswordButton
+{
+    position: absolute;
+    bottom: 225px;
+    left: 200px;
+    width: 150px;
+    height: 28px;
+}
+
+#socialConnect
+{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+    border-top-style: hidden;
+}
+
+#facebookConnectButton
+{
+    width: 49%;
+    display: none;
+}
+
+#googleConnectButton
+{
+    width: 49%;
+    float: right;
+    display: none;
+}
+
+#changePasswordBox
+{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    height: 220px;
+    top: 300px;
+    background-color: white;
+    border-style: solid;
+    animation-name: slideOutDown;
+    animation-duration: 0.25s;
+    animation-play-state: paused;
+}
+
+#labelDiv
+{
+    position: absolute;
+    left: 100px;
+    text-align: right;
+    top: 60px;
+    width: 175px;
+    height: 120px;
+}
+
+#inputPassDiv
+{
+    position: absolute;
+    left: 180px;
+    text-align: left;
+    top: 55px;
+    width: 300px;
+    height: 120px;
+}
+
+.changePasswordInput
+{
+    width: 250px;
+}
+
+.changePassText
+{
+    position: relative;
+    right: 100px;
+}
+
+#changeSubmitButton
+{
+    position: absolute;
+    top: 180px;
+}
