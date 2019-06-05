@@ -4,8 +4,7 @@ function closeRegister() {
 
 function forgotPasswordShow() {
     document.getElementById("forgotPasswordBackground").style.display = "block";
-    document.getElementById("fogotPasswordBox").style.animationPlayState =
-        "running";
+    document.getElementById("fogotPasswordBox").style.animationPlayState = "running";
 }
 
 function login() {
@@ -26,8 +25,7 @@ function login() {
             alert("You have been logged in.");
             window.open("../index.html", "_self");
         } else {
-            document.getElementById("loginErrorMessage").style.display =
-                "block";
+            document.getElementById("loginErrorMessage").style.display = "block";
         }
     };
 
@@ -55,7 +53,7 @@ function onSignIn(googleUser) {
     sendGoogle.open("POST", "/googleSignIn", true);
 
     sendGoogle.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             var accountExist = sendGoogle.responseText;
 
             if (accountExist == "true") {
@@ -69,10 +67,7 @@ function onSignIn(googleUser) {
                     console.log("Google Registeration Success");
                 };
 
-                sendRegister.setRequestHeader(
-                    "Content-type",
-                    "application/json"
-                );
+                sendRegister.setRequestHeader("Content-type", "application/json");
                 sendRegister.send(JSON.stringify(googleInfo));
 
                 var sendLogin = new XMLHttpRequest();

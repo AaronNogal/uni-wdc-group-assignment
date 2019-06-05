@@ -106,6 +106,7 @@ THEN: When you finish your part, help someone else.
 -   Formatted all the files, and setup prettier so when we save it auto formats.
 -   NOTE: We need to discuss how we are going to use `vue.js`. We could simply have one app html file, then populate it with vue components and so on. We would probably lose quite a bit of marks if we do regualar js without vue. Besides, it should be faster and easier with vue, we just need to decide on the structure.
 -   QUESTION: Does anyone know whether we are allowed to use bootstrap for the CSS? WOuld make things easy.
+-   Fixed the page links in the html.
 
 ### Anas
 
