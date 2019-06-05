@@ -1,11 +1,9 @@
-#registerBody
-{
+#registerBody {
     background-image: url("../images/background.jpg");
-	background-size: cover;
+    background-size: cover;
 }
 
-#registerDiv
-{
+#registerDiv {
     width: 450px;
     height: 650px;
     position: center;
@@ -17,8 +15,7 @@
     background-color: white;
 }
 
-#registerButton
-{
+#registerButton {
     position: center;
     height: 38px;
 }
