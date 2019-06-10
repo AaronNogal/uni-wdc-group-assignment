@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Management</title>
+       
+	   <link rel="stylesheet" type="text/css" href="../stylesheets/searchresults.css">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+       	   <link rel="stylesheet" type="text/css" href="../stylesheets/manage.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+        <script src="../javascripts/searchresults.js"></script>
+        <script src="../javascripts/login.js"></script>
+        <script src="/javascripts/loginCheck.js"></script>
+        <script src="../javascripts/manage.js"></script> 
+
+	</head>
+	<body onload="returnSearches()">
+		<button class="homepageButton" onclick="openHomePage()"><i class="fa fa-home"></i>
+        </button>
+        
+		
+		<div class="searchbox">
+            <div class="search">
+            <form action="../pages/searchresults.html">    
+            <input class="Searchbox" type="text" placeholder="Search.." name="search">
+            <input class="Searchbox" placeholder="Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="search">
+            <select name="MealType" id="type" onchange="calcNum.call(this, event)" class="typedrop">
+	                <option value="placeholder" disabled selected hidden>Lunch</option>
+	                <option value="1">Breakfast</option>
+	                <option value="2">Lunch</option>
+	                <option value="3">Dinner</option>
+	            </select>
+				<select name="peoplenum" id="people" onchange="calcNum.call(this, event)" class="peopledrop">
+	                <option value="placeholder" disabled selected hidden>Number</option>
+	                <option value="1">1</option>
+	                <option value="2">2</option>
+	                <option value="3">3</option>
+	                <option value="4">4</option>
+	            </select>
+            <button type="submit" class="magnif"><i class="fa fa-search"></i></button>
+            </form>
+			</div> 
+				
+        <hr>
+		</div>
+		<h1>Welcome!<br>Account Name</h1>
+		<hr>
+		
+		<div class="lefttext">
+			<h3>My Reservations</h3>
+		</div>
+		<div class="righttext">
+			<b><u>Upcoming Reservations:</u></b><br>
+			You have no upcoming reservations!<br>
+			<b><u>Past Reservations:</u></b><br>
+			You have no past reservations!
+		</div>
+		<hr>
+		<div class="lefttext">
+			<h3>Account</h3>
+		</div>
+		<div class = "righttext">
+			<b><u>Profile</u></b><br>
+			Name: TempName<br>
+			Mobile Number: 55556666
+		</div>
+		<div class="rightrighttext">
+			Address: 55 Temporary Road<br>
+			Email: Temp@Temp.com
+		</div>
+		<hr>	
+	</body>
+</html>
