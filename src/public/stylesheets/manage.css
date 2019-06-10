@@ -1,0 +1,19 @@
+
+.lefttext{
+    width:20%;
+    float:left;
+    height:20%;
+
+}
+.righttext{
+    
+    width:40%;
+    height:40%;
+    float:center;
+}
+.rightrighttext{
+    width:40%;
+    height:40%;
+    float:right;
+}
+    
