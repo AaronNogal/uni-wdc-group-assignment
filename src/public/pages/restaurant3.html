@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Restaurant Information:Restaurant1</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="../stylesheets/searchresults.css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" />
+    </head>
+
+    <body id="Restaurant">
+        <button class="homepageButton" onclick="openHomePage()"><i class="fa fa-home"></i></button>
+
+        <div class="banner">
+            <a href="login.html" class="bannerText" id="bannerLogIn">Log In</a>
+            <a href="register.html" class="bannerText" id="bannerRegister">Register</a>
+        </div>
+
+        <div class="searchbox">
+            <div class="search">
+                <form action="../pages/searchresults.html">
+                    <input type="text" placeholder="Search.." name="search" />
+                    <button type="submit" class="magnif"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="name">
+            <h2 style="font-size:150%">
+                <b><ins>Restaurant1</ins></b>
+            </h2>
+
+            <address style="font-size:100%" class="left">
+                North Terrace, Adelaide SA 5000
+            </address>
+            <p>DESCRIPTION</p>
+        </div>
+
+        <div class="gallery" align="center">
+            <a target="_blank" href="image1.jpg">
+                <img src="../images/image7.jpg" alt="image1" width="400" height="400" class="center" />
+            </a>
+            <a target="_blank" href="image2.jpg">
+                <img src="../images/image8.jpg" alt="image2" width="400" height="400" class="center" />
+            </a>
+            <a target="_blank" href="image3.jpg">
+                <img src="../images/image9.jpg" alt="image3" width="400" height="400" class="center" />
+            </a>
+        </div>
+
+        <div class="book" align="center">
+            <select name="Facing" class="book">
+                <option value="type" disabled selected hidden>Choose meal type</option>
+                <option value="1">Breakfast</option>
+                <option value="2">Lunch</option>
+                <option value="3">Dinner</option>
+            </select>
+
+            <select name="no.OfPeople" class="book">
+                <option value="NO." disabled selected hidden>How many people</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <button>BOOK</button>
+        </div>
+
+        <div class="comment">
+            <br />
+            <textarea rows="5" cols="70">Add Comment...</textarea><br />
+            <button>Submit</button>
+        </div>
+
+        <div id="bg">
+            <img src="../images/restaurant3.jpg" alt="" />
+        </div>
+    </body>
+</html>

@@ -94,8 +94,9 @@ THEN: When you finish your part, help someone else.
 -   **Robert:**
     -   [ ] `/` Fix CSS.
     -   [x] Basic server page routing.
-    -   [ ] Ensuring everything works together.
-    -   [ ] Will sort out pages we are all going to do after talkign about vue, till then will do whatever.
+    -   [ ] Ensuring everything works together.~~
+
+**Will sort out pages we are all going to do after talkign about vue, till then will do whatever we need to.**
 
 ## Logs
 

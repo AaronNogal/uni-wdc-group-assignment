@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Search Results</title>
+
+        <link rel="stylesheet" type="text/css" href="../stylesheets/searchresults.css" />
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" />
+
+        <script src="../javascripts/searchresults.js"></script>
+
+        <! add css file please >
+        <style></style>
+    </head>
+    <body onload="returnSearches()">
+        <button class="homepageButton" onclick="openHomePage()"><i class="fa fa-home"></i></button>
+
+        <div class="banner">
+            <a href="login.html" class="bannerText" id="bannerLogIn">Log In</a>
+            <a href="register.html" class="bannerText" id="bannerRegister">Register</a>
+        </div>
+
+        <div class="searchbox">
+            <div class="search">
+                <form action="../pages/searchresults.html">
+                    <input type="text" placeholder="Search.." name="search" />
+                    <button type="submit" class="magnif"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="Date">
+                <input placeholder="Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="search" />
+            </div>
+
+            <select name="MealType" id="type" onchange="calcNum.call(this, event)" class="typedrop">
+                <option value="placeholder" disabled selected hidden>Lunch</option>
+                <option value="1">Breakfast</option>
+                <option value="2">Lunch</option>
+                <option value="3">Dinner</option>
+            </select>
+
+            <select name="peoplenum" id="people" onchange="calcNum.call(this, event)" class="peopledrop">
+                <option value="placeholder" disabled selected hidden>Number</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="Restaurant" id="R1">
+            <div class="img">
+                <img src="../images/restaurant1.jpg" alt="" />
+            </div>
+            <form action="../pages/restaurant1.html" class="Button">
+                <input type="submit" value="VIEW" />
+            </form>
+            <h1>Restaurant1</h1>
+            <p>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i><br />
+                replace this line with descripton of restaurant.
+            </p>
+        </div>
+
+        <div class="Restaurant" id="R2">
+            <div class="img">
+                <img src="../images/restaurant2.jpg" alt="" />
+            </div>
+            <form action="../pages/restaurant2.html" class="Button">
+                <input type="submit" value="VIEW" />
+            </form>
+            <h1>Restaurant2</h1>
+            <p>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" aria-hidden="true"></i><br />
+                replace this line with descripton of restaurant.
+            </p>
+        </div>
+
+        <div class="Restaurant" id="R3">
+            <div class="img">
+                <img src="../images/restaurant3.jpg" alt="" />
+            </div>
+            <form action="../pages/restaurant3.html" class="Button">
+                <input type="submit" value="VIEW" />
+            </form>
+            <h1>Restaurant3</h1>
+            <p>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" aria-hidden="true"></i>
+                <i class="active fa fa-star" aria-hidden="true"></i><br />
+                replace this line with descripton of restaurant.
+            </p>
+        </div>
+
+        <div id="bg">
+            <img src="../images/bookingpagebackground.jpg" alt="" />
+        </div>
+    </body>
+</html>

@@ -1,36 +1,45 @@
-var createError = require("http-errors");
 var express = require("express");
+const crypto = require("crypto");
 var router = express.Router();
-var path = require("path");
-
+var mysql = require("mysql");
+var connection = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    database: "demo"
+});
+connection.connect();
 router.get("/", function(req, res, next) {
-    res.sendFile(path.join(__dirname + "/../public/pages/index.html"));
+    res.render("index", { title: "Express" });
 });
 
-router.get("/search", function(req, res, next) {
-    res.sendFile(path.join(__dirname + "/../public/pages/search.html"));
+router.post("/login", function(req, res, next) {
+    var data = req.body;
+    connection.query("SELECT * from userdata WHERE email = '" + data.email + "'" + "and password = '" + data.password + "'", function(error, results, fields) {
+        if (error) throw error;
+        if (!results.length) {
+            res.json({ status: 0, message: "Login Failed , email or password is incorrect" });
+        } else {
+            res.json({ status: 1, message: "Login Success", info: results[0] });
+        }
+    });
 });
 
-// TODO: We should proably check with vue in the front end what the end of the url is, then use `{{ resturant_description }}` and so on to populate the data on the `resturant.html` page
-router.get("/resturant/*", function(req, res, next) {
-    res.sendFile(path.join(__dirname + "/../public/pages/resturant.html"));
-});
-
-router.get("/sign-up", function(req, res, next) {
-    res.sendFile(path.join(__dirname + "/../public/pages/sign-up.html"));
-});
-
-router.get("/login", function(req, res, next) {
-    res.sendFile(path.join(__dirname + "/../public/pages/login.html"));
-});
-
-router.get("/manage", function(req, res, next) {
-    // NOTE: This might be something we would want to do.
-    if (!req.user) {
-        return next(createError(401, "Please login to view this page."));
-    }
-
-    res.sendFile(path.join(__dirname + "/../public/pages/manage.html"));
+router.post("/register", function(req, res, next) {
+    var data = req.body;
+    connection.query("SELECT email from userdata WHERE email = '" + data.email + "'", function(error, results, fields) {
+        if (error) throw error;
+        if (!results.length) {
+            connection.query("INSERT INTO userdata(firstName,lastName,password,email,role) VALUES(?,?,?,?,?)", [data.firstName, data.lastName, data.password, data.email, data.role], function(err, result) {
+                if (err) {
+                    console.log("[INSERT ERROR] - ", err.message);
+                    return;
+                }
+                res.json({ status: 1, message: "Registeration Success" });
+            });
+        } else {
+            res.json({ status: 0, message: "Registeration Failed , email already exist" });
+        }
+    });
 });
 
 module.exports = router;

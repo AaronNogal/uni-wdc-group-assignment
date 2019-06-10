@@ -1,6 +1,17 @@
 #loginBody {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background_berry.jpeg");
     background-size: cover;
+}
+
+.homepageButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    float: top;
+    left: 0;
 }
 
 .loginbox {

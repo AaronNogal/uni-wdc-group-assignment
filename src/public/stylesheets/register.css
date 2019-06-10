@@ -1,5 +1,5 @@
 #registerBody {
-    background-image: url("../assets/images/background_bread.jpg");
+    background-image: url("../images/background_bread.jpeg");
     background-size: cover;
 }
 .word {
@@ -41,9 +41,8 @@
     width: 300px;
     height: 30px;
     position: absolute;
-    left: 560px;
-    bottom: -10px;
-    height: 38px;
+    left: 40%;
+    bottom: -7%;
 }
 
 #GoogleSignIn {
