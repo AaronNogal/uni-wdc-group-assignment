@@ -92,5 +92,3 @@ function onSignIn(googleUser) {
     sendGoogle.setRequestHeader("Content-type", "application/json");
     sendGoogle.send(JSON.stringify(googleInfo));
 }
-
-}

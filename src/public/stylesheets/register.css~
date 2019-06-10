@@ -1,0 +1,52 @@
+#registerBody {
+    background-image: url("../images/background_bread.jpeg");
+    background-size: cover;
+}
+.word {
+    text-align: center;
+}
+.homepageButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    left: 0;
+}
+#registerDiv {
+    width: 450px;
+    height: 700px;
+    position: center;
+    left: 600px;
+    top: 0px;
+    margin: auto;
+    padding: 50px;
+    border-style: none;
+    background-color: white;
+}
+
+.nameInputBox {
+    width: 450px;
+    height: 30px;
+}
+
+.EPInputBox {
+    width: 450px;
+    height: 30px;
+}
+
+#registerButton {
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    left: 40%;
+    bottom: -7%;
+}
+
+#GoogleSignIn {
+    position: relative;
+    top: -40px;
+    left: 553px;
+}

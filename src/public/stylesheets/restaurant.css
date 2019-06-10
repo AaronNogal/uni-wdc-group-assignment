@@ -1,3 +1,9 @@
+	#restaurantBody
+{
+    background-image: url("../images/background2.jpg");
+	background-size: cover;
+}
+
 .homepageButton {
     background-color: transparent;
     border: none;
@@ -13,7 +19,7 @@
   background-color: RoyalBlue;
 }
 
-.txt-center p {
+.txt-center p{
     text-align: left;
 }
 

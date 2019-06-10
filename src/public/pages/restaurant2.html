@@ -1,81 +1,90 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <title>Restaurant Information:Restaurant1</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="../stylesheets/searchresults.css" />
+<head>
 
-        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" />
-    </head>
+	
+<title>Restaurant Information:Restaurant1</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../stylesheets/searchresults.css">
 
-    <body id="Restaurant">
-        <button class="homepageButton" onclick="openHomePage()"><i class="fa fa-home"></i></button>
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
 
-        <div class="banner">
-            <a href="login.html" class="bannerText" id="bannerLogIn">Log In</a>
-            <a href="register.html" class="bannerText" id="bannerRegister">Register</a>
-        </div>
+</head>
 
-        <div class="searchbox">
+<body id="Restaurant">
+	
+	<button class="homepageButton" onclick="openHomePage()"><i class="fa fa-home"></i>
+        </button>
+	
+	<div class="banner">
+        <a href="login.html" class="bannerText" id="bannerLogIn">Log In</a>
+        <a href="register.html" class="bannerText" id="bannerRegister">Register</a>
+    </div>
+	
+		<div class="searchbox">
+
             <div class="search">
-                <form action="../pages/searchresults.html">
-                    <input type="text" placeholder="Search.." name="search" />
-                    <button type="submit" class="magnif"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        </div>
-
-        <div class="name">
-            <h2 style="font-size:150%">
-                <b><ins>Restaurant1</ins></b>
-            </h2>
-
-            <address style="font-size:100%" class="left">
-                North Terrace, Adelaide SA 5000
-            </address>
-            <p>DESCRIPTION</p>
-        </div>
-
-        <div class="gallery" align="center">
-            <a target="_blank" href="image1.jpg">
-                <img src="../images/image4.jpg" alt="image1" width="400" height="400" class="center" />
-            </a>
-            <a target="_blank" href="image2.jpg">
-                <img src="../images/image5.jpg" alt="image2" width="400" height="400" class="center" />
-            </a>
-            <a target="_blank" href="image3.jpg">
-                <img src="../images/image6.jpg" alt="image3" width="400" height="400" class="center" />
-            </a>
-        </div>
-
-        <div class="book" align="center">
-            <select name="Facing" class="book">
+            <form action="../pages/searchresults.html">    
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" class="magnif"><i class="fa fa-search"></i></button>
+            </form>
+        </div> 
+		</div>
+			
+		<div class="name">
+	
+			<h2 style="font-size:150%"><b><ins>Restaurant1</ins></b></h2>
+			
+		
+			<address style="font-size:100%" class="left">
+				 1/285 RUNDLE ST, ADELAIDE SA 5000
+			</address>
+			<p>UPSCALE MODERN AUSTRALIAN TASTING MENU IN AN ELEGANT, INTIMATE RESTAURANT WITH TIMBER STYLING.</p>
+			</div>
+			
+		<div class="gallery" align="center">
+		  <a target="_blank" href="image1.jpg">
+			<img src="../images/image4.jpg" alt="image1" width="400" height="400" class="center">
+		  </a>
+		  <a target="_blank" href="image2.jpg">
+			<img src="../images/image5.jpg" alt="image2" width="400" height="400" class="center">
+		  </a>
+		  <a target="_blank" href="image3.jpg">
+			<img src="../images/image6.jpg" alt="image3" width="400" height="400" class="center">
+		  </a>
+		</div>
+		
+		<div class="book" align="center">
+		
+			<select name="Facing" class="book">
                 <option value="type" disabled selected hidden>Choose meal type</option>
                 <option value="1">Breakfast</option>
                 <option value="2">Lunch</option>
                 <option value="3">Dinner</option>
+                
             </select>
-
-            <select name="no.OfPeople" class="book">
+		
+			<select name="no.OfPeople" class="book">
                 <option value="NO." disabled selected hidden>How many people</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
             </select>
-
-            <button>BOOK</button>
+			
+			<button>BOOK</button>
+					
+		</div>
+		
+		<div class="comment"><br>
+		<textarea rows="5" cols="70">Add Comment...</textarea><br>
+		<button>Submit</button>
+		</div>
+		
+		<div id="bg">
+        <img src="../images/restaurant2.jpg" alt="">
         </div>
-
-        <div class="comment">
-            <br />
-            <textarea rows="5" cols="70">Add Comment...</textarea><br />
-            <button>Submit</button>
-        </div>
-
-        <div id="bg">
-            <img src="../images/restaurant2.jpg" alt="" />
-        </div>
-    </body>
+		
+</body>
 </html>

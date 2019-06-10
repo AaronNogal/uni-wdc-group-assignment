@@ -1,0 +1,58 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Homepage</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="../stylesheets/restaurant.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+        <script src="../javascripts/login.js"></script>
+        <script src="/javascripts/loginCheck.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body id="restaurantBody">
+        <div>
+            <button class="homepageButton" onclick="openHomePage()">
+                <i class="fa fa-home"></i>
+            </button>
+            <p>Hello!</p>
+        </div>
+        <div class="restaurantimage">
+            <img src="/assets/images/restaurant.jpg" class="restaurantimagesize" alt="" />
+        </div>
+        <hr />
+        <div class="restaurantName">
+            <h1>Restaurant Name</h1>
+        </div>
+        <hr />
+        <div class="Profile">
+            <i class="fas" style="float:left">&#xf57b;Cuision:</i>
+            <p class="Profilesushi">Sushi</p>
+            <i class="fas fa-dollar-sign">Average Price:</i>
+            <p class="Money">25$</p>
+        </div>
+        <div class="Description">
+            <p>
+                Located on Booth Street in the heart of Annandale Village, Osteria Antica is the Inner West's latest eatery offering a tasty selection of Italian dishes including wood fired pizzas, salads, meat and fish dishes and pastas and it has a licensed bar.
+            </p>
+        </div>
+        <div class="txt-center">
+            <form>
+                <div class="rating">
+                    <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+                    <label for="star5">â</label>
+                    <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+                    <label for="star4">â</label>
+                    <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+                    <label for="star3">â</label>
+                    <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+                    <label for="star2">â</label>
+                    <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+                    <label for="star1">â</label>
+                    <div class="clear"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

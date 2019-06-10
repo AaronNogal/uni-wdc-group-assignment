@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Search Results</title>
+       
+	   <link rel="stylesheet" type="text/css" href="../stylesheets/searchresults.css">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+       
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+        <script src="../javascripts/searchresults.js"></script>
+        <script src="../javascripts/login.js"></script>
+        <script src="/javascripts/loginCheck.js"></script>
+	</head>
+	<body onload="returnSearches()">
+		<button class="homepageButton" onclick="openHomePage()"><i class="fa fa-home"></i>
+        </button>
+        <div class="banner">
+            <a href="login.html" class="bannerText" id="bannerLogIn">Log In</a>
+            <a href="register.html" class="bannerText" id="bannerRegister">Register</a>
+        </div>
+		
+		<div class="searchbox">
+            <div class="search">
+            <form action="../pages/searchresults.html">    
+            <input class="Searchbox" type="text" placeholder="Search.." name="search">
+            <input class="Searchbox" placeholder="Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="search">
+            <select name="MealType" id="type" onchange="calcNum.call(this, event)" class="typedrop">
+	                <option value="placeholder" disabled selected hidden>Lunch</option>
+	                <option value="1">Breakfast</option>
+	                <option value="2">Lunch</option>
+	                <option value="3">Dinner</option>
+	            </select>
+				<select name="peoplenum" id="people" onchange="calcNum.call(this, event)" class="peopledrop">
+	                <option value="placeholder" disabled selected hidden>Number</option>
+	                <option value="1">1</option>
+	                <option value="2">2</option>
+	                <option value="3">3</option>
+	                <option value="4">4</option>
+	            </select>
+            <button type="submit" class="magnif"><i class="fa fa-search"></i></button>
+            </form>
+			</div> 
+				
+            
+		</div>
+		
+		<div class="Restaurant" id="R1">
+            <div class="img1">
+                <h1 style="position:absolute; left: 55%;"> Andre's Cucina & Polenta Bar </h1>
+                <p style="position:absolute; left: 55%; top: 17%"> <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                    <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                    <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                    <i class="active fa fa-star" id="gold" aria-hidden="true"></i><Br>
+                        Intro: Light-filled Italian restaurant with an organic garden, offering set menus and quick lunches.<br>
+                Address: 94 Frome St, Adelaide SA 5000<br>
+                Hours: 11:30am–2:45pm, 5:30–10pm<br>
+                Phone: (08) 8224 0004
+                </p>
+                
+                <img class="img1"src="../images/restaurant1.jpg" alt=""> 
+            </div>
+            <button class="Button" onclick="window.location.href = '../pages/restaurant1.html'; ">VIEW</button>
+            
+        </div>	
+		
+		<div class="Restaurant" id="R2">
+            <div class="img2">
+                <img class="img2"src="../images/restaurant2.jpg" alt="">
+            </div>
+            <h1 style="position:absolute; left: 55%; top:67%"> Orana </h1>
+            <p style="position:absolute; left: 55%; top: 74%" > <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" aria-hidden="true"></i><Br>
+                    Intro: Upscale Modern Australian tasting menu in an elegant, intimate restaurant with timber styling.<br>
+                    Address: 1/285 Rundle St, Adelaide SA 5000<br>
+                    Hours:	6–11pm;<br>
+                    Phone: (08) 8232 3444  </p>
+            </div>
+            <button class="Button2" onclick="window.location.href = '../pages/restaurant2.html'; ">VIEW</button>
+		
+		<div class="Restaurant" id="R3">
+            <div class="img">
+                <img class="img3"src="../images/restaurant3.jpg" alt="">
+            </div>
+            
+            <h1 style="position:absolute; left: 55%; top:145%"> Chianti </h1>
+            <p style="position:absolute; left: 55%; top: 152%"> <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" id="gold" aria-hidden="true"></i>
+                <i class="active fa fa-star" aria-hidden="true"></i>
+                <i class="active fa fa-star" aria-hidden="true"></i><Br>
+                    Intro: Family-run trattoria with all-day menus of Italian staples, a sleek dining room and pavement tables.
+                    Address: 160 Hutt St, Adelaide SA 5000<br>
+                    Hours: 	7:30am–12am<br>
+                    Phone: (08) 8232 7955
+                    </p>
+            </div>
+            <button class="Button3" onclick="window.location.href = '../pages/restaurant3.html'; ">VIEW</button>
+	 <div id="bg">
+        <img src="../images/bookingpagebackground.jpg" alt="">
+        </div>
+	</body>
+</html>

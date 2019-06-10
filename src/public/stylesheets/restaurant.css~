@@ -1,0 +1,121 @@
+.homepageButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    float:top;
+    left:0;
+}
+
+.homepageButton:hover {
+  background-color: RoyalBlue;
+}
+
+.txt-center p {
+    text-align: left;
+}
+
+#left {
+    text-align: left;
+}
+
+.hide {
+    display: none;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.rating {
+    width: 90px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+    float:left;
+    padding-right: 10px;
+}
+
+.rating > label {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+    color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
+
+.restaurantimage {
+    
+}
+
+.restaurantimagesize {
+    width:500px;
+    height:200px;
+}
+
+.restaurantName {
+    text-align: center;
+}
+
+.Profile i{
+    margin-left:10px;
+    font-size:24px;
+    line-height: 25px;
+    display:inline;
+    float:left;
+    padding;5px;
+}
+.Profilesushi {
+    line-height:30px;
+    margin:0;
+    display:inline;
+    float:left;
+    font-size:27px;
+}
+
+.Money {
+    line-height:30px;
+    margin:0;
+    display:inline;
+    font-size:27px;
+}
+
+.Description pre
+{
+page-break-inside: avoid;
+display: block;
+padding: 3px 3px 2px;
+font-size: 13px;
+line-height: 7px;
+word-break: break-all;
+word-wrap: break-word;
+}
+
+
+
+
+
+

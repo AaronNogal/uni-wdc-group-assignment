@@ -1,6 +1,7 @@
-#loginBody {
+#loginBody
+{
     background-image: url("../images/background_berry.jpeg");
-    background-size: cover;
+	background-size: cover;
 }
 
 .homepageButton {
@@ -10,11 +11,12 @@
     padding: 20px 30px;
     font-size: 16px;
     cursor: pointer;
-    float: top;
-    left: 0;
+    float:top;
+    left:0;
 }
 
-.loginbox {
+.loginbox
+{
     position: relative;
     top: 255px;
     margin: auto;
@@ -22,45 +24,52 @@
     width: 600px;
     height: 350px;
     border-radius: 5px;
-    background-color: rgba(192, 192, 192, 0.8);
+    background-color: rgba(192,192,192,0.8);
 }
 
-.accountlogin {
+.accountlogin
+{
     width: 49%;
     height: 100%;
     float: left;
     border-right-style: solid;
 }
 
-.socialLogin {
+.socialLogin
+{
     width: 49%;
     height: 100%;
     float: right;
     text-align: center;
 }
 
-.socialButton {
+.socialButton
+{
     width: 250px;
     height: 35px;
 }
 
-#FacebookSignIn {
+#FacebookSignIn
+{
     position: relative;
     top: 40px;
 }
 
-#GoogleSignIn {
+#GoogleSignIn
+{
     position: relative;
     top: 60px;
     left: 20px;
 }
 
-#RegisterText {
+#RegisterText
+{
     position: relative;
     top: 130px;
 }
 
-#registerRedirectButton {
+#registerRedirectButton
+{
     width: 250px;
     height: 35px;
     bottom: 20px;
@@ -68,13 +77,15 @@
     top: 140px;
 }
 
-.loginTextArea {
+.loginTextArea
+{
     width: 90%;
     height: 18px;
     resize: none;
 }
 
-#LoginButton {
+#LoginButton
+{
     margin: 5px 25px;
     height: 30px;
     width: 70px;
@@ -82,7 +93,8 @@
     left: 57px;
 }
 
-#forgotPasswordBackground {
+#forgotPasswordBackground
+{
     display: none;
     position: fixed;
     z-index: 1;
@@ -90,10 +102,11 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.5);
 }
 
-@keyframes slideOutDown {
+@keyframes slideOutDown
+{
     from {
         transform: translate3d(0, -25%, 0);
     }
@@ -104,7 +117,8 @@
     }
 }
 
-#fogotPasswordBox {
+#fogotPasswordBox
+{
     position: relative;
     margin: auto;
     text-align: center;
@@ -118,26 +132,30 @@
     animation-play-state: paused;
 }
 
-#loginErrorMessage {
+#loginErrorMessage
+{
     display: none;
     text-align: center;
     height: 50px;
     width: 90%;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255,0,0,0.5);
 }
 
-#loginErrorMessageText {
+#loginErrorMessageText
+{
     position: relative;
     top: 5px;
 }
 
-#CloseButton {
+#CloseButton
+{
     position: absolute;
     right: 15px;
     top: 1px;
 }
 
-.nameInputBox {
+.nameInputBox
+{
     position: absolute;
     top: 120px;
     width: 200px;
@@ -145,29 +163,34 @@
     resize: none;
 }
 
-#lastNameInput {
+#lastNameInput
+{
     left: 250px;
 }
 
-#lastNameText {
+#lastNameText
+{
     position: absolute;
     top: 60px;
     left: 250px;
 }
 
-.EPInputBox {
+.EPInputBox
+{
     width: 440px;
     height: 18px;
     resize: none;
 }
 
-.showBox {
+.showBox
+{
     resize: none;
     height: 18px;
     width: 98%;
 }
 
-#changePasswordButton {
+#changePasswordButton
+{
     position: absolute;
     bottom: 225px;
     left: 200px;
@@ -175,7 +198,8 @@
     height: 28px;
 }
 
-#socialConnect {
+#socialConnect
+{
     width: 90%;
     margin: auto;
     padding: 10px;
@@ -183,18 +207,21 @@
     border-top-style: hidden;
 }
 
-#facebookConnectButton {
+#facebookConnectButton
+{
     width: 49%;
     display: none;
 }
 
-#googleConnectButton {
+#googleConnectButton
+{
     width: 49%;
     float: right;
     display: none;
 }
 
-#changePasswordBox {
+#changePasswordBox
+{
     position: relative;
     margin: auto;
     text-align: center;
@@ -208,7 +235,8 @@
     animation-play-state: paused;
 }
 
-#labelDiv {
+#labelDiv
+{
     position: absolute;
     left: 100px;
     text-align: right;
@@ -217,7 +245,8 @@
     height: 120px;
 }
 
-#inputPassDiv {
+#inputPassDiv
+{
     position: absolute;
     left: 180px;
     text-align: left;
@@ -226,16 +255,19 @@
     height: 120px;
 }
 
-.changePasswordInput {
+.changePasswordInput
+{
     width: 250px;
 }
 
-.changePassText {
+.changePassText
+{
     position: relative;
     right: 100px;
 }
 
-#changeSubmitButton {
+#changeSubmitButton
+{
     position: absolute;
     top: 180px;
 }

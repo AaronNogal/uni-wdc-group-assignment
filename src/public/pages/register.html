@@ -1,62 +1,67 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <title>Register</title>
-        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet" />
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <meta name="google-signin-client_id" content="285241402568-mratju6p91qusuu3ng7iso9brbc0q72n.apps.googleusercontent.com" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="../stylesheets/restaurant.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-        <link rel="stylesheet" type="text/css" href="../stylesheets/register.css" />
+<head>
+<title>Register</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet"> -->
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+    <meta name="google-signin-client_id" content="285241402568-mratju6p91qusuu3ng7iso9brbc0q72n.apps.googleusercontent.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/restaurant.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/register.css">
+    
+    <script src="../javascripts/register.js"></script>
+    <script src="../javascripts/login.js"></script> 
+    <!-- <script src="/javascripts/loginCheck.js"></script> -->
+</head>
+<body id="registerBody">
+        <button class="homepageButton" onclick="openHomePage()"><i class="fa fa-home"></i>
+        </button>
+    
+    <div id="registerDiv">
+        <h2 class="word">SIGNUP</h2>
+        <h3 id="firstNameText">First Name</h3>
+        <input id="firstNameInput" class="nameInputBox" type = "text">
+        <h3 id="lastNameText">Last Name</h3>
+        <input id="lastNameInput" class="nameInputBox"  type = "text">
+        <br>
+        <h3 id="emailText">Email</h3>
+        <input id="emailInput" class="EPInputBox"  type = "text">
+        <h3 id="email2Text">Confirm Email</h3>
+        <input id="email2Input" class="EPInputBox" >
+        <h3 id="passwordText">Password</h3>
+        <input id="passwordInput" class="EPInputBox" type="password">
+        <h3 id="password2Text">Confirm Password</h3>
+        <input id="password2Input" class="EPInputBox"   type = "password">
+        <h3 id="role">Select Role</h3>
+        individual<input type="radio" name="role" checked>
+        restaurant<input type="radio" name="role">
+        <button id="registerButton" onclick="registerAccount()">Register</button>
+        <br>
+    </div>
+    <!-- <div class="g-signin2" data-width="300" data-height="35" data-onsuccess="onSignIn" id="GoogleSignIn"></div> -->
 
-        <script src="../javascripts/register.js"></script>
-        <script src="../javascripts/login.js"></script>
-        <script src="../javascripts/loginCheck.js"></script>
-    </head>
-    <body id="registerBody">
-        <button class="homepageButton" onclick="openHomePage()"><i class="fa fa-home"></i></button>
+    <!-- <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
+    <!-- <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
 
-        <div id="registerDiv">
-            <h2 class="word">Register</h2>
-            <h3 id="firstNameText">First Name</h3>
-            <input id="firstNameInput" class="nameInputBox" type="text" />
-            <h3 id="lastNameText">Last Name</h3>
-            <input id="lastNameInput" class="nameInputBox" type="text" />
-            <br />
-            <h3 id="emailText">Email</h3>
-            <input id="emailInput" class="EPInputBox" type="text" />
-            <h3 id="email2Text">Confirm Email</h3>
-            <input id="email2Input" class="EPInputBox" type="password" />
-            <h3 id="passwordText">Password</h3>
-            <input id="passwordInput" class="EPInputBox" type="password" />
-            <h3 id="password2Text">Confirm Password</h3>
-            <input id="password2Input" class="EPInputBox" type="text" />
-            <button id="registerButton">Register</button>
-            <br />
-        </div>
-        <div class="g-signin2" data-width="300" data-height="35" data-onsuccess="onSignIn" id="GoogleSignIn"></div>
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      }
+    </script> -->
 
-        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-        <script>
-            function onSignIn(googleUser) {
-                // Useful data for your client-side scripts:
-                var profile = googleUser.getBasicProfile();
-                console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-                console.log("Full Name: " + profile.getName());
-                console.log("Given Name: " + profile.getGivenName());
-                console.log("Family Name: " + profile.getFamilyName());
-                console.log("Image URL: " + profile.getImageUrl());
-                console.log("Email: " + profile.getEmail());
-
-                // The ID token you need to pass to your backend:
-                var id_token = googleUser.getAuthResponse().id_token;
-                console.log("ID Token: " + id_token);
-            }
-        </script>
-    </body>
+</body>
 </html>
